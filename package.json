@@ -1,0 +1,19 @@
+{
+  "name": "to_do_list_react",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server" : "node ./server/server.js",
+    "client" : "cd client && npm run start",
+    "build": "if-env NODE_ENV=production && npm run server || npm run client"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
